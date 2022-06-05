@@ -1,9 +1,9 @@
 # site scope vars
 timezone: Asia/Shanghai
 
-title: 一个专题网站的例子
-title_en: Some Site
-email: someone@some.com
+title: 斗南花卉研究所
+title_en: Dounan Flower Research Institute
+email: dnResearch@institute.com
 baseurl: ""
 
 # 构建时排除的文件
