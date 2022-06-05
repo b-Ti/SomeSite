@@ -1,39 +1,11 @@
 ---
 layout: default
-current: home
-class: 'home-template'
-navigation: True
+title: 首页
+permalink: /home/
+redirect_from:
+  - /
 ---
 
-<!-- < default -->
-<!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template -->
-
-<!-- The big featured header, it uses blog cover image as a BG if available -->
-<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
-    <div class="inner">
-        <div class="site-header-content">
-            <h1 class="site-title">
-                {% if site.logo %}
-                    <img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>
-                {% else %}
-                    {{ site.title }}
-                {% endif %}
-            </h1>
-            <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
-        </div>
-        {% include site-nav.html %}
-    </div>
-</header>
-
-<!-- The main content area -->
-<main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
-
-        <div class="post-feed">
-            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
-            {%  include post-card.html %}
-        </div>
-
-    </div>
-</main>
+<h1>
+    坐落于斗南花卉小镇核心区域的“国际花卉创新中心”，由云南省农业科学院花卉研究所总体规划设计，占地面积约100亩。项目建设内容包括国家观赏园艺工程技术研究中心共享实验室、观赏园艺国家专业化众创空间（FIDP）、云南省花卉技术创新中心培训基地、绿色高效种植基地。项目全面建成后，将使得产学研一体发展，助力斗南花卉产业蓬勃发展。
+</h1>
